@@ -1,0 +1,21 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+body, html {
+    font-size: small;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+body, td, a, p, .h {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logos {
+    height: 92px;
+    width: 272px;
+    align-content: center;
+    padding-top: 109px;
+}

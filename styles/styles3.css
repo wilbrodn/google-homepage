@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+.box1{
+    background: lightcoral;
+}
+.box2{
+    background: lightgreen;
+}
+.box3{
+    background: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /*Summarise above with grid-column: 1/3*/
+    /*
+}
+
+
+main{
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+
+}
+
+*/
+
+
+.box1{
+    background: lightcoral;
+    grid-area: b1;
+    align-self: center;
+}
+.box2{
+    display: flex;
+    background: lightgreen;
+    grid-area: b2;
+    align-self: center;
+}
+.box3{
+    background: lightblue;
+   grid-area: b3;
+}
+
+main{
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-areas: 
+        "b1 b1"
+        "b2 ."
+        ". b3";
+}
