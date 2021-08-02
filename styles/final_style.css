@@ -21,14 +21,94 @@ body {
     height: 100%;
 }
 .wn1{
-    flex-shrink: o;
+    flex-shrink: 0;
     box-sizing: border-box;
     height: 60px;
     align-items: center;
     padding: 6px;
-    display: flex;
-    background: chocolate;
+    display: flex inline-block;
+    flex-grow: 1;
+    z-index: 986;
 }
+.a1{
+    display: flex;
+    float: right top;
+    padding-left: 0;
+    box-sizing: border-box;
+    height: 48px;
+    line-height: normal;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    vertical-align: middle;
+    white-space: nowrap;
+    align-items: center;
+    font: 13px/27px;
+    color: black;
+    position: relative;
+    flex-grow: 1;
+    
+}
+.a2{
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.a21{
+    display: inline-block;
+    padding-left: 15px;
+    white-space: nowrap;
+
+}
+
+.a22{
+    display: inline-block;
+}
+
+.a3 {
+    display: block;
+    position: relative;
+    float: right;
+}
+
+.b1 {
+    display: inline-block;
+}
+
+
+.svg{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    display: inline-block;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    vertical-align: middle;
+    padding-left: 4px;
+    line-height: normal;
+}
+
+.userImg{
+    background-size: 32px 32px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 0;
+    height: 32px;
+    width: 32px;
+}
+
+
+
 .wn2{
     flex-shrink: o;
     box-sizing: border-box;
@@ -39,7 +119,19 @@ body {
     padding: 6px;
     display: flex;
     flex-direction: column;
-    background: chartreuse;
+}
+.logos{
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: auto;
+}
+.logo{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
 }
 .wn3{
     padding: 20px;
@@ -47,13 +139,75 @@ body {
     flex-shrink: 0;
     box-sizing: border-box;
     display: block;
-    background: cadetblue;
 }
+.wn31{
+    width: auto;
+    max-width: 584px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+.wn32{
+    width: auto;
+    max-width: 584px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+}
+.wn321{
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+}
+.s32a{
+    display: flex;
+    align-items: center;
+}
+.wn33{
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+    z-index: 0;
+}
+.wn331{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
 .wn4{
     flex-grow: 1;
     flex-shrink: 0;
     box-sizing: border-box;
-    background: cornflowerblue;
+}
+.wn41{
+    font-size: small;
+    margin-bottom: 24px;
+    text-align: center;
+    display: block;
+}
+.wn42{
+    display: inline-block;
+    line-height: 28px;
+    color: #3c4043;
 }
 .wn5{
     background: #f2f2f2;
@@ -64,17 +218,22 @@ body {
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
-    color: rgba(0,0,0.54);
+    color: rgba(0,0,0,0.54);
 }
 .wn52 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 20px;
 }
 .beth {
-    padding: 15px 30px;
+    padding: 15px;
+    display: block;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
-    color: rgba(0,0,0.54);
+    color: #70757a;
+    white-space: nowrap;
+}
+a {
+    text-decoration: none;
 }
