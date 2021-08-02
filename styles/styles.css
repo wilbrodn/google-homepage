@@ -1,5 +1,11 @@
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
 
+* {
+    padding: 0;
+    margin: o;
+    box-sizing: content-box;
+
+}
 body, html {
     font-size: small;
 }
@@ -18,4 +24,54 @@ body, td, a, p, .h {
     width: 272px;
     align-content: center;
     padding-top: 109px;
+}
+main{
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3"
+    "box4";
+
+}
+
+.box1{
+    height: 48px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    
+}
+.box11{
+    width: 243px;
+    height: 48px;
+    background: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "box111" "box112";
+
+}
+
+.box111{
+    height: 24;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "box1111" "box1112";
+
+}
+.box1111{ 
+     background: rgb(55, 0, 255);
+}
+.box1112{
+    background: cadetblue;
+}
+
+.box112{
+    height: 24;
+    background: rgb(88, 20, 83);
+
 }
